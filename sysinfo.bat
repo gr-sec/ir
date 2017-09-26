@@ -1,5 +1,8 @@
 :: System Information Batch File (Incident Response Version)
 :: Use this to get a system state snapshot baseline, or to enumerate a potentially compromised system
+:: This script uses Sysinternals Autorunsc which should be in the same top level folder as the script.
+:: https://live.sysinternals.com/autorunsc.exe
+:: This also uses Sysmon, which needs to be preinstalled
 
 :: Set FOLDER variable to contain output files
 FOR /F "TOKENS=1* EOL=/ DELIMS= " %%A IN ('DATE.EXE/t') DO SET STARTDATE=%%A
